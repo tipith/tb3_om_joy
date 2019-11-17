@@ -22,27 +22,27 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCL
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#ifndef TELEOP_TWIST_JOY_TELEOP_TWIST_JOY_H
-#define TELEOP_TWIST_JOY_TELEOP_TWIST_JOY_H
+#ifndef tb3_om_joy_tb3_om_joy_H
+#define tb3_om_joy_tb3_om_joy_H
 
 namespace ros { class NodeHandle; }
 
-namespace teleop_twist_joy
+namespace tb3_om_joy
 {
 
 /**
  * Class implementing a basic Joy -> Twist translation.
  */
-class TeleopTwistJoy
+class TB3OMJoy
 {
 public:
-  TeleopTwistJoy(ros::NodeHandle* nh, ros::NodeHandle* nh_param);
+  TB3OMJoy(ros::NodeHandle* nh, ros::NodeHandle* nh_param);
 
 private:
   struct Impl;
   Impl* pimpl_;
 };
 
-}  // namespace teleop_twist_joy
+}  // namespace tb3_om_joy
 
-#endif  // TELEOP_TWIST_JOY_TELEOP_TWIST_JOY_H
+#endif  // tb3_om_joy_tb3_om_joy_H

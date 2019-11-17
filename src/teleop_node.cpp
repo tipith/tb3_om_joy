@@ -24,14 +24,14 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 */
 
 #include "ros/ros.h"
-#include "teleop_twist_joy/teleop_twist_joy.h"
+#include "tb3_om_joy/tb3_om_joy.h"
 
 int main(int argc, char *argv[])
 {
-  ros::init(argc, argv, "teleop_twist_joy_node");
+  ros::init(argc, argv, "tb3_om_joy_node");
 
   ros::NodeHandle nh(""), nh_param("~");
-  teleop_twist_joy::TeleopTwistJoy joy_teleop(&nh, &nh_param);
+  tb3_om_joy::TB3OMJoy omjoy_teleop(&nh, &nh_param);
 
   ros::spin();
 }
